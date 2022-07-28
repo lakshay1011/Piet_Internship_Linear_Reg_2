@@ -5,7 +5,7 @@ import pickle
 
 
 app = Flask(__name__)
-model = pickle.load(open('/content/drive/My Drive/linearreg_house.pkl','rb')) 
+model = pickle.load(open('linearreg_house.pkl','rb')) 
 run_with_ngrok(app)
 
 @app.route('/')
